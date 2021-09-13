@@ -3,11 +3,14 @@ package com.insightfullogic.java8.examples.chapter2;
 import org.junit.Test;
 
 import javax.swing.*;
+import java.io.File;
+import java.nio.file.Path;
 import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
@@ -77,5 +80,49 @@ public class LambdaExercises {
     private boolean check(IntPred predicate) {
         return true;
     }
+
+    @Test
+    public void _3d() {
+        // No
+        // check(x -> x > 5);
+        List<Integer> list1 = new ArrayList<>();
+        final Stream<List<Integer>> list11 = Stream.of(list1);
+        final List<Integer> list = Stream.of(1, 2, 3).collect(Collectors.toList());
+
+
+    }
+
+    @Test
+    public void _3e() {
+        double a = 1000.0 / 3;
+        System.out.printf("%,.2f", a);
+        System.out.println();
+        String name = "liuwenke";
+        int age = 38;
+        String message = String.format("Hello,%s. Next year,you'll be %d", name, age);
+        System.out.println(message);
+        Date now = new Date();
+        System.out.printf("%tc", now);
+        System.out.println();
+        System.out.printf("%tr", now);
+    }
+
+    @Test
+    public void _3f() {
+        final Map<String, String> env = System.getenv();
+        final Properties properties = System.getProperties();
+        String path = new StringBuilder()
+                .append(System.getenv("HOME"))
+                .append(File.separator)
+                .append("app")
+                .append(File.separator)
+                .append("jdk8")
+                .append(File.separator)
+                .append("abc.txt")
+                .toString();
+        //new Scanner(Path.of())
+        System.out.println();
+    }
+
 
 }
