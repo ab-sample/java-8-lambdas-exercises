@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.concurrent.CountDownLatch.Sync</OriginalElement>
+  <nodes>
+    <node x="89.625" y="166.0">java.util.concurrent.locks.AbstractQueuedSynchronizer</node>
+    <node x="363.0" y="826.0">java.util.concurrent.CountDownLatch.Sync</node>
+    <node x="250.0" y="826.0">java.util.concurrent.locks.AbstractQueuedSynchronizer.Node</node>
+    <node x="220.57692307692307" y="82.0">java.util.concurrent.locks.AbstractOwnableSynchronizer</node>
+    <node x="144.125" y="0.0">java.io.Serializable</node>
+    <node x="0.0" y="736.0">java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer" target="java.util.concurrent.locks.AbstractOwnableSynchronizer" relationship="GENERALIZATION">
+      <point x="98.25" y="-259.0" />
+      <point x="384.375" y="139.0" />
+      <point x="359.0769230769231" y="139.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="-57.5" y="-105.0" />
+      <point x="57.5" y="715.0" />
+      <point x="79.125" y="715.0" />
+      <point x="79.125" y="56.0" />
+      <point x="211.625" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="-98.25" y="-259.0" />
+      <point x="187.875" y="139.0" />
+      <point x="210.07692307692307" y="139.0" />
+      <point x="210.07692307692307" y="56.0" />
+      <point x="211.625" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractOwnableSynchronizer" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="359.0769230769231" y="56.0" />
+      <point x="211.625" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject" target="java.util.concurrent.locks.AbstractQueuedSynchronizer" relationship="INNER_CLASS">
+      <point x="57.5" y="-105.0" />
+      <point x="172.5" y="715.0" />
+      <point x="229.82692307692307" y="715.0" />
+      <point x="229.82692307692307" y="705.0" />
+      <point x="187.875" y="705.0" />
+      <point x="-98.25" y="259.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer.Node" target="java.util.concurrent.locks.AbstractQueuedSynchronizer" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.0" />
+      <point x="296.5" y="715.0" />
+      <point x="229.82692307692307" y="715.0" />
+      <point x="229.82692307692307" y="705.0" />
+      <point x="187.875" y="705.0" />
+      <point x="-98.25" y="259.0" />
+    </edge>
+    <edge source="java.util.concurrent.CountDownLatch.Sync" target="java.util.concurrent.locks.AbstractQueuedSynchronizer" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="406.0" y="715.0" />
+      <point x="384.375" y="715.0" />
+      <point x="98.25" y="259.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="249.0" y="473.0" />
+  <SelectedNodes>
+    <node>java.util.concurrent.CountDownLatch.Sync</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.concurrent.locks.ReentrantReadWriteLock</OriginalElement>
+  <nodes>
+    <node x="520.25" y="892.5">java.util.concurrent.locks.ReentrantReadWriteLock.Sync.ThreadLocalHoldCounter</node>
+    <node x="774.5897887323943" y="213.0">java.util.concurrent.locks.AbstractQueuedSynchronizer</node>
+    <node x="110.99999999999994" y="880.0">java.util.concurrent.locks.ReentrantReadWriteLock.FairSync</node>
+    <node x="311.99999999999994" y="880.0">java.util.concurrent.locks.ReentrantReadWriteLock.NonfairSync</node>
+    <node x="405.45774647887316" y="641.0">java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock</node>
+    <node x="776.25" y="869.0">java.util.concurrent.locks.ReentrantReadWriteLock.Sync.HoldCounter</node>
+    <node x="0.0" y="641.0">java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock</node>
+    <node x="177.99999999999994" y="268.0">java.util.concurrent.locks.ReentrantReadWriteLock</node>
+    <node x="1066.457746478873" y="608.0">java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject</node>
+    <node x="725.25" y="0.0">java.io.Serializable</node>
+    <node x="893.4577464788731" y="542.0">java.util.concurrent.locks.AbstractQueuedSynchronizer.Node</node>
+    <node x="606.4577464788731" y="564.0">java.util.concurrent.locks.ReentrantReadWriteLock.Sync</node>
+    <node x="845.5897887323943" y="82.0">java.util.concurrent.locks.AbstractOwnableSynchronizer</node>
+    <node x="261.0897887323943" y="105.5">java.util.concurrent.locks.ReadWriteLock</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="45.25" y="-71.5" />
+      <point x="1202.207746478873" y="520.0" />
+      <point x="1164.3397887323943" y="520.0" />
+      <point x="1164.3397887323943" y="56.0" />
+      <point x="792.75" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="0.0" y="-82.5" />
+      <point x="296.99999999999994" y="186.0" />
+      <point x="250.5897887323943" y="186.0" />
+      <point x="250.5897887323943" y="56.0" />
+      <point x="792.75" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.Sync.HoldCounter" target="java.util.concurrent.locks.ReentrantReadWriteLock.Sync" relationship="INNER_CLASS">
+      <point x="0.0" y="-38.5" />
+      <point x="849.75" y="848.0" />
+      <point x="747.3397887323943" y="848.0" />
+      <point x="747.3397887323943" y="838.0" />
+      <point x="806.7077464788731" y="838.0" />
+      <point x="66.75" y="115.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.NonfairSync" target="java.util.concurrent.locks.ReentrantReadWriteLock.Sync" relationship="GENERALIZATION">
+      <point x="45.25" y="-27.5" />
+      <point x="447.74999999999994" y="848.0" />
+      <point x="541.625" y="848.0" />
+      <point x="541.625" y="838.0" />
+      <point x="673.2077464788731" y="838.0" />
+      <point x="-66.75" y="115.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.Sync.ThreadLocalHoldCounter" target="java.util.concurrent.locks.ReentrantReadWriteLock.Sync" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.0" />
+      <point x="638.25" y="848.0" />
+      <point x="747.3397887323943" y="848.0" />
+      <point x="747.3397887323943" y="838.0" />
+      <point x="806.7077464788731" y="838.0" />
+      <point x="66.75" y="115.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer" target="java.util.concurrent.locks.AbstractOwnableSynchronizer" relationship="GENERALIZATION">
+      <point x="67.5" y="-137.5" />
+      <point x="977.0897887323943" y="186.0" />
+      <point x="984.0897887323943" y="186.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="-67.5" y="-137.5" />
+      <point x="842.0897887323943" y="186.0" />
+      <point x="835.0897887323943" y="186.0" />
+      <point x="835.0897887323943" y="56.0" />
+      <point x="792.75" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock" target="java.util.concurrent.locks.ReadWriteLock" relationship="REALIZATION">
+      <point x="0.0" y="-82.5" />
+      <point x="296.99999999999994" y="186.0" />
+      <point x="343.0897887323943" y="186.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.NonfairSync" target="java.util.concurrent.locks.ReentrantReadWriteLock" relationship="INNER_CLASS">
+      <point x="-45.25" y="-27.5" />
+      <point x="357.24999999999994" y="838.0" />
+      <point x="296.99999999999994" y="838.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer.Node" target="java.util.concurrent.locks.AbstractQueuedSynchronizer" relationship="INNER_CLASS">
+      <point x="0.0" y="-137.5" />
+      <point x="969.9577464788731" y="520.0" />
+      <point x="1013.9647887323943" y="520.0" />
+      <point x="1013.9647887323943" y="510.0" />
+      <point x="977.0897887323943" y="510.0" />
+      <point x="67.5" y="137.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject" target="java.util.concurrent.locks.AbstractQueuedSynchronizer" relationship="INNER_CLASS">
+      <point x="-45.25" y="-71.5" />
+      <point x="1111.707746478873" y="520.0" />
+      <point x="1013.9647887323943" y="520.0" />
+      <point x="1013.9647887323943" y="510.0" />
+      <point x="977.0897887323943" y="510.0" />
+      <point x="67.5" y="137.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.AbstractOwnableSynchronizer" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="984.0897887323943" y="56.0" />
+      <point x="792.75" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock" target="java.util.concurrent.locks.ReentrantReadWriteLock" relationship="INNER_CLASS">
+      <point x="-45.25" y="-38.5" />
+      <point x="450.70774647887316" y="520.0" />
+      <point x="296.99999999999994" y="520.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.FairSync" target="java.util.concurrent.locks.ReentrantReadWriteLock" relationship="INNER_CLASS">
+      <point x="-45.25" y="-27.5" />
+      <point x="156.24999999999994" y="848.0" />
+      <point x="191.49999999999994" y="848.0" />
+      <point x="191.49999999999994" y="520.0" />
+      <point x="296.99999999999994" y="520.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.Sync" target="java.util.concurrent.locks.AbstractQueuedSynchronizer" relationship="GENERALIZATION">
+      <point x="66.75" y="-115.5" />
+      <point x="806.7077464788731" y="520.0" />
+      <point x="842.0897887323943" y="520.0" />
+      <point x="-67.5" y="137.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="45.24999999999994" y="-38.5" />
+      <point x="541.2077464788731" y="510.0" />
+      <point x="611.25" y="510.0" />
+      <point x="611.25" y="56.0" />
+      <point x="792.75" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.Sync" target="java.util.concurrent.locks.ReentrantReadWriteLock" relationship="INNER_CLASS">
+      <point x="-66.75" y="-115.5" />
+      <point x="673.2077464788731" y="520.0" />
+      <point x="296.99999999999994" y="520.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.FairSync" target="java.util.concurrent.locks.ReentrantReadWriteLock.Sync" relationship="GENERALIZATION">
+      <point x="45.25" y="-27.5" />
+      <point x="246.74999999999994" y="848.0" />
+      <point x="541.625" y="848.0" />
+      <point x="541.625" y="838.0" />
+      <point x="673.2077464788731" y="838.0" />
+      <point x="-66.75" y="115.5" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="-45.25" y="-38.5" />
+      <point x="45.25" y="520.0" />
+      <point x="79.00176056338023" y="520.0" />
+      <point x="79.00176056338023" y="56.0" />
+      <point x="792.75" y="56.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock" target="java.util.concurrent.locks.ReentrantReadWriteLock" relationship="INNER_CLASS">
+      <point x="45.25" y="-38.5" />
+      <point x="135.75" y="520.0" />
+      <point x="296.99999999999994" y="520.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="844.0780711825489" y="455.5" />
+  <SelectedNodes>
+    <node>java.util.concurrent.locks.AbstractOwnableSynchronizer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

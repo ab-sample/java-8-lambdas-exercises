@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.concurrent.CountDownLatch</OriginalElement>
+  <nodes>
+    <node x="0.5" y="0.0">java.util.concurrent.CountDownLatch</node>
+    <node x="0.0" y="239.0">java.util.concurrent.CountDownLatch.Sync</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.concurrent.CountDownLatch.Sync" target="java.util.concurrent.CountDownLatch" relationship="INNER_CLASS">
+      <point x="0.0" y="-72.5" />
+      <point x="0.0" y="94.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="115.5" y="192.0" />
+  <SelectedNodes>
+    <node>java.util.concurrent.CountDownLatch</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
